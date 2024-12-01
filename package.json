@@ -1,4 +1,5 @@
 {
+  "homepage":"https://maraeliza.github.io/evogym",
   "name": "tailwind-no-vite",
   "private": true,
   "version": "0.0.0",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "framer-motion": "^11.12.0",
+    "gh-pages": "^6.2.0",
     "heroicons": "^2.2.0",
     "react": "^18.3.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
